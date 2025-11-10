@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course: Python & Java</title>
+<style>
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: rgba(0,0,0,0.85);
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+a:hover { color: #ffdd00; }
+
+/* Hamburger menu */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    color: #00ffff;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.95);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.navbar a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #00ffff;
+    display: block;
+    transition: 0.2s;
+}
+.navbar a:hover {
+    color: #ffdd00;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+}
+</style>
+</head>
+<body>
+
+<!-- Hamburger menu icon -->
+<span class="menu-icon" onclick="openNav()">&#9776;</span>
+
+<!-- Navigation bar -->
+<div id="myNav" class="navbar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="#courses">Course</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<div class="container">
+
+<h1 id="courses">Course: Python & Java</h1>
+
+<!-- Python Section -->
+<h2>Python</h2>
+<img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo">
+<p>
+Python is a high-level, interpreted programming language created by **Guido van Rossum** and first released in **1991**. 
+It emphasizes code readability, simplicity, and ease of use. Python supports multiple programming paradigms, including 
+procedural, object-oriented, and functional programming. It is widely used in web development, data science, AI, 
+automation, and more.
+</p>
+
+<!-- Java Section -->
+<h2>Java</h2>
+<img src="https://www.oracle.com/a/ocom/img/cb71-java-logo-001.jpg" alt="Java Logo">
+<p>
+Java is a high-level, class-based, object-oriented programming language developed by **James Gosling** at Sun Microsystems 
+and released in **1995**. Java is designed to be platform-independent through the use of the Java Virtual Machine (JVM), 
+allowing developers to "write once, run anywhere". It is widely used in web applications, enterprise software, mobile apps, 
+and large-scale systems.
+</p>
+
+<p style="text-align:center;"><a href="index.html">← Back to Main Page</a></p>
+
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
+

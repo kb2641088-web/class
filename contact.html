@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Learn Python & Java</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    background: rgba(0,0,0,0.85);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #FFD700;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+a:hover { color: #ffdd00; }
+
+/* Hamburger menu */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    color: #00ffff;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.95);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.navbar a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #00ffff;
+    display: block;
+    transition: 0.2s;
+}
+.navbar a:hover {
+    color: #ffdd00;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+}
+</style>
+</head>
+<body>
+
+<!-- Hamburger menu icon -->
+<span class="menu-icon" onclick="openNav()">&#9776;</span>
+
+<!-- Navigation bar -->
+<div id="myNav" class="navbar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="course.html">Course</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+<h1>Don't Stop Learning</h1>
+
+<p>For more info about us, contact this email: <a href="mailto:kb2641088@gmail.com">kb2641088@gmail.com</a></p>
+<p>Cellphone number: 084-261-9196</p>
+<p>Address:</p>
+<p>University of KwaZulu-Natal<br>
+Pietermaritzburg<br>
+KwaZulu-Natal<br>
+3201<br>
+South Africa</p>
+
+<p style="margin-top:40px;"><a href="index.html">← Back to Main Page</a></p>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

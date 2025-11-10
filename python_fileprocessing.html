@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python File Processing</title>
+<style>
+body {font-family: Arial; background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&q=80'); color:#fff; margin:0;}
+.container {background: rgba(0,0,0,0.85); max-width:1000px; margin:50px auto; padding:30px; border-radius:15px;}
+a {color:#00ffff;text-decoration:none;} a:hover{color:#ffdd00;} pre{background: rgba(255,255,255,0.1); padding:10px; border-radius:5px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Python Chapter 10: File Processing</h1>
+<p>Reading and writing files:</p>
+<pre>
+# Write to a file
+with open("file.txt","w") as f:
+    f.write("Hello World")
+
+# Read from a file
+with open("file.txt","r") as f:
+    content = f.read()
+    print(content)
+</pre>
+<p><a href="index.html">← Back to Main Page</a></p>
+</div>
+</body>
+</html>

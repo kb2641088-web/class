@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODE14 - Learn Python & Java</title>
+<style>
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+}
+
+/* Website name at top */
+.site-name {
+    text-align: center;
+    font-size: 50px;
+    color: #FFD700;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Container */
+.container {
+    background: rgba(0,0,0,0.85);
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #FFD700;
+}
+
+/* Chapter links */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 10px 0;
+}
+a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #ffdd00;
+}
+
+/* Hamburger menu */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1001;
+    color: #00ffff;
+}
+
+/* Navigation bar */
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.95);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.navbar a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #00ffff;
+    display: block;
+    transition: 0.2s;
+}
+.navbar a:hover {
+    color: #ffdd00;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+}
+</style>
+</head>
+<body>
+
+<!-- Hamburger menu icon -->
+<span class="menu-icon" onclick="openNav()">&#9776;</span>
+
+<!-- Navigation bar -->
+<div id="myNav" class="navbar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#courses">Course</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- Website name -->
+<div class="site-name">CODE_14</div>
+
+<div class="container">
+<h1 id="courses">Learn Python & Java</h1>
+
+<h2>Python Chapters</h2>
+<ul>
+<li><a href="python_variable.html">1. Variables</a></li>
+<li><a href="python_input.html">2. Input Values</a></li>
+<li><a href="python_datatypes.html">3. Data Types</a></li>
+<li><a href="python_typeconversion.html">4. Type Conversion</a></li>
+<li><a href="python_arrays.html">5. Arrays / Lists</a></li>
+<li><a href="python_loops.html">6. Loops</a></li>
+<li><a href="python_2darrays.html">7. 2D Arrays / Lists</a></li>
+<li><a href="python_methods.html">8. Methods / Functions</a></li>
+<li><a href="python_oop.html">9. OOP</a></li>
+<li><a href="python_fileprocessing.html">10. File Processing</a></li>
+</ul>
+
+<h2>Java Chapters</h2>
+<ul>
+<li><a href="java_variable.html">1. Variables</a></li>
+<li><a href="java_input.html">2. Input Values</a></li>
+<li><a href="java_datatypes.html">3. Data Types</a></li>
+<li><a href="java_typeconversion.html">4. Type Conversion</a></li>
+<li><a href="java_arrays.html">5. Arrays</a></li>
+<li><a href="java_loops.html">6. Loops</a></li>
+<li><a href="java_2darrays.html">7. 2D Arrays</a></li>
+<li><a href="java_methods.html">8. Methods / Functions</a></li>
+<li><a href="java_oop.html">9. OOP</a></li>
+<li><a href="java_fileprocessing.html">10. File Processing</a></li>
+</ul>
+
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("myNav").style.width = "0";
+}
+</script>
+
+</body>
+</html>
